@@ -1,0 +1,18 @@
+SELECT 'accounts' as table_name, COUNT(*) as row_count FROM accounts
+UNION ALL SELECT 'aircraft', COUNT(*) FROM aircraft
+UNION ALL SELECT 'aircraft_types', COUNT(*) FROM aircraft_types
+UNION ALL SELECT 'airport', COUNT(*) FROM airport
+UNION ALL SELECT 'boarding_passes', COUNT(*) FROM boarding_passes
+UNION ALL SELECT 'bookings', COUNT(*) FROM bookings
+UNION ALL SELECT 'booking_items', COUNT(*) FROM booking_items
+UNION ALL SELECT 'cancellations', COUNT(*) FROM cancellations
+UNION ALL SELECT 'crew', COUNT(*) FROM crew
+UNION ALL SELECT 'crew_assignments', COUNT(*) FROM crew_assignments
+UNION ALL SELECT 'delays', COUNT(*) FROM delays
+UNION ALL SELECT 'flights', COUNT(*) FROM flights
+UNION ALL SELECT 'passengers', COUNT(*) FROM passengers
+UNION ALL SELECT 'routes', COUNT(*) FROM routes
+UNION ALL SELECT 'seats', COUNT(*) FROM seats
+UNION ALL SELECT 'seat_reservations', COUNT(*) FROM seat_reservations
+UNION ALL SELECT 'ticket_payments', COUNT(*) FROM ticket_payments
+ORDER BY table_name;

@@ -1,0 +1,179 @@
+/* Cancel Booking Styles */
+.cancel-booking-card {
+    margin-top: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cancel-success,
+.cancel-error,
+.cancel-confirmation {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.success-icon,
+.error-icon,
+.warning-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.cancel-success h2,
+.cancel-error h2,
+.cancel-confirmation h2 {
+    color: #203a43;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.cancel-success p,
+.cancel-error p,
+.cancel-confirmation p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.cancelled-booking-info,
+.booking-details-box {
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.cancelled-booking-info h3,
+.booking-details-box h3 {
+    color: #203a43;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.info-grid,
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-item,
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-label,
+.detail-label {
+    font-size: 0.85rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.info-value,
+.detail-value {
+    font-size: 1.1rem;
+    color: #203a43;
+    font-weight: 600;
+}
+
+.badge-confirmed {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #10b981;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.cancellation-warning {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.cancellation-warning p {
+    color: #856404;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cancellation-warning ul {
+    margin: 0;
+    padding-left: 25px;
+    color: #856404;
+}
+
+.cancellation-warning li {
+    margin-bottom: 8px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.cancel-confirm-btn,
+.cancel-cancel-btn {
+    padding: 14px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cancel-confirm-btn {
+    background: #f44336;
+    color: white;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+}
+
+.cancel-confirm-btn:hover {
+    background: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4);
+}
+
+.cancel-cancel-btn {
+    background: #e0e0e0;
+    color: #333;
+    border: 2px solid #ccc;
+}
+
+.cancel-cancel-btn:hover {
+    background: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .info-grid,
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .cancel-confirm-btn,
+    .cancel-cancel-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
